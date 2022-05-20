@@ -64,8 +64,8 @@ function parse_git_branch {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/' -e 's/((/(/' -e 's/))/)/'
 }
 
-# Set the main prompt to show hostname if connected remotely + git branch
-export PROMPT="%B$([ -n "$is_remote" ] && echo "%F{magenta}%m%f ")%F{cyan}%n%f %F{blue}%~%f%b\$(parse_git_branch) %B%#%b "
+# Prompt shows hostname if connected to a remote or if root
+PROMPT="%B$([ -n "$is_remote" ] || [ "$EUID" = 0 ] && echo "%F{magenta}%m%f ")%F{$([ "$EUID" = 0 ] && echo "red" || echo "cyan")}%n%f %F{blue}%~%f%b\$(parse_git_branch) %B%#%b "
 
 # Hook preexec/precmd to dynamically set rprompt with useful info
 function preexec {

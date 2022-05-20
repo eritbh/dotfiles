@@ -65,7 +65,7 @@ function parse_git_branch {
 }
 
 # Set the main prompt to show hostname if connected remotely + git branch
-export PROMPT="%B$([ -n "$is_remote" ] && echo "%F{blue}%m%f ")%F{cyan}%n%f %F{blue}%~%f%b\$(parse_git_branch) %B%#%b "
+export PROMPT="%B$([ -n "$is_remote" ] && echo "%F{magenta}%m%f ")%F{cyan}%n%f %F{blue}%~%f%b\$(parse_git_branch) %B%#%b "
 
 # Hook preexec/precmd to dynamically set rprompt with useful info
 function preexec {

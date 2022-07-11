@@ -19,3 +19,9 @@ Then, you can install other stuff:
 ```
 ln -s ~/.dotfiles/zsh/.zshrc ~/.zshrc
 ```
+
+### vim
+
+```
+ln -s ~/.dotfiles/vim/.vimrc ~/.vimrc
+```

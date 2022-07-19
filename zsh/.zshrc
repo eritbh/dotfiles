@@ -48,6 +48,7 @@ alias la='ls -aFh'
 alias l='ls -CFh'
 alias clip='xclip -selection clipboard'
 alias copy='clip'
+alias code='code -r'
 
 # Prompt stuff
 setopt PROMPT_SUBST

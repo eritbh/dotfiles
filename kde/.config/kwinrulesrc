@@ -1,0 +1,19 @@
+[1]
+Description=Application settings for discord
+clientmachine=localhost
+decocolor=Discord Titlebar
+decocolorrule=2
+wmclass=discord
+wmclassmatch=1
+
+[General]
+count=2
+rules=ac4334d1-953b-4987-893d-875a2a0603ac,1
+
+[ac4334d1-953b-4987-893d-875a2a0603ac]
+Description=Application settings for code
+clientmachine=localhost
+decocolor=VS Code Titlebars
+decocolorrule=2
+wmclass=code
+wmclassmatch=1

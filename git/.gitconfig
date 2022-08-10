@@ -1,0 +1,12 @@
+[user]
+	name = Erin
+	email = github@eritbh.me
+[alias]
+	l = log --oneline --decorate --graph
+	la = log --oneline --decorate --graph --all
+	wmerge = merge --no-commit -Xignore-space-change
+	lc = diff --numstat
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main

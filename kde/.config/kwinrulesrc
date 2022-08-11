@@ -1,4 +1,19 @@
 [1]
+Description=Window settings for konsole
+decocolor=Konsole Dark Pastel Titlebar
+decocolorrule=2
+types=1
+wmclass=konsole
+wmclassmatch=1
+
+[2]
+Description=Application settings for code
+decocolor=VS Code Titlebar
+decocolorrule=2
+wmclass=code
+wmclassmatch=1
+
+[3]
 Description=Application settings for discord
 clientmachine=localhost
 decocolor=Discord Titlebar
@@ -7,13 +22,5 @@ wmclass=discord
 wmclassmatch=1
 
 [General]
-count=2
+count=3
 rules=ac4334d1-953b-4987-893d-875a2a0603ac,1
-
-[ac4334d1-953b-4987-893d-875a2a0603ac]
-Description=Application settings for code
-clientmachine=localhost
-decocolor=VS Code Titlebars
-decocolorrule=2
-wmclass=code
-wmclassmatch=1

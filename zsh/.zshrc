@@ -49,6 +49,7 @@ alias l='ls -CFh'
 alias clip='xclip -selection clipboard'
 alias copy='clip'
 alias code='code -r'
+function mkcd { mkdir -p $1 && cd $1 }
 
 # Prompt stuff
 setopt PROMPT_SUBST

@@ -21,6 +21,14 @@ decocolorrule=2
 wmclass=discord
 wmclassmatch=1
 
+[4]
+Description=Application settings for obsidian
+decocolor=Obsidian Minimal Light titlebar
+decocolorrule=2
+noborderrule=2
+wmclass=obsidian
+wmclassmatch=1
+
 [General]
-count=3
+count=4
 rules=ac4334d1-953b-4987-893d-875a2a0603ac,1

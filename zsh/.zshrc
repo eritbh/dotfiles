@@ -55,11 +55,13 @@ function mkcd { mkdir -p $1 && cd $1 }
 setopt PROMPT_SUBST
 
 # Detect if the current session is running on a remote server
-if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
+if [ -n "$IS_REMOTE_SESSION" ] || [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
     is_remote=1
 else
     is_remote=
 fi
+# export is_remote
+export IS_REMOTE_SESSION=$is_remote
 
 # Function to get the current branch name
 function parse_git_branch {

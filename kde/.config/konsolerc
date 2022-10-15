@@ -8,3 +8,6 @@ ShowWindowTitleOnTitleBar=true
 [MainWindow]
 State=AAAA/wAAAAD9AAAAAAAAAoAAAAHCAAAABAAAAAQAAAAIAAAACPwAAAAA
 ToolBarsMovable=Disabled
+
+[Notification Messages]
+CloseAllTabs=true

@@ -68,6 +68,13 @@ function parse_git_branch {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/' -e 's/((/(/' -e 's/))/)/'
 }
 
+# Set named directories to shorten path display on non-remote systems
+if [ -z "$is_remote" ]; then
+    hash -d gh=~/src/github.com
+    hash -d gl=~/src/gitlab.com
+    hash -d gist=~/src/gist.github.com
+fi
+
 # Prompt shows hostname if connected to a remote or if root
 PROMPT="%B$([ -n "$is_remote" ] || [ "$EUID" = 0 ] && echo "%F{magenta}%m%f ")%F{$([ "$EUID" = 0 ] && echo "red" || echo "cyan")}%n%f %F{blue}%~%f%b\$(parse_git_branch) %B%#%b "
 

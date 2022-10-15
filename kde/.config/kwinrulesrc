@@ -23,9 +23,8 @@ wmclassmatch=1
 
 [4]
 Description=Application settings for obsidian
-decocolor=Obsidian Minimal Light titlebar
+decocolor=Obsidian Light titlebar
 decocolorrule=2
-noborderrule=2
 wmclass=obsidian
 wmclassmatch=1
 

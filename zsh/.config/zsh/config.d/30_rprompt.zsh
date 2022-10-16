@@ -20,7 +20,7 @@ function precmd {
         RPROMPT="exited %B%(?.%F{green}%?%f.%F{red}%?%f)%b"
         if [ -z $timer ]; then
             # If we never set $timer, preexec was never run (e.g. ^C at prompt)
-            RPROMPT="$(print -P "%B%F{cyan}no exec%f%b, $RPROMPT")"
+            RPROMPT="%B%F{cyan}no exec%f%b, $RPROMPT"
         else
             # Calculate elapsed real time for last command
             now="$(date +%s.%N)"

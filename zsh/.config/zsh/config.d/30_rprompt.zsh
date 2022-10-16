@@ -1,10 +1,14 @@
 # Hook preexec/precmd to dynamically set rprompt with useful info
-function preexec {
+function start_prompt_timer {
     # Store command execution start time
     timer="${timer:-"$(date +%s.%N)"}"
 }
+preexec_functions+="start_prompt_timer"
+
+# this actually does need to be the precmd function because it needs to run
+# before any other precmd hooks (e.g. the VS Code terminal integration hook)
+# happen, otherwise $? will be fucked
 function precmd {
-    vcs_info
     # Start with a fresh prompt
     RPROMPT=""
     if [ -z $new_session ]; then
@@ -16,7 +20,7 @@ function precmd {
         RPROMPT="exited %B%(?.%F{green}%?%f.%F{red}%?%f)%b"
         if [ -z $timer ]; then
             # If we never set $timer, preexec was never run (e.g. ^C at prompt)
-            RPROMPT=="$(print -P "%B%F{cyan}no exec%f%b, $RPROMPT")"
+            RPROMPT="$(print -P "%B%F{cyan}no exec%f%b, $RPROMPT")"
         else
             # Calculate elapsed real time for last command
             now="$(date +%s.%N)"
@@ -37,5 +41,3 @@ function precmd {
     # always unset $timer for the next run
     unset timer
 }
-preexec_functions+=preexec
-precmd_functions+=precmd

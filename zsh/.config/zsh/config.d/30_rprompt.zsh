@@ -1,14 +1,15 @@
 # Hook preexec/precmd to dynamically set rprompt with useful info
+preexec_functions+=start_prompt_timer
 function start_prompt_timer {
     # Store command execution start time
     timer="${timer:-"$(date +%s.%N)"}"
 }
-preexec_functions+="start_prompt_timer"
 
-# this actually does need to be the precmd function because it needs to run
-# before any other precmd hooks (e.g. the VS Code terminal integration hook)
-# happen, otherwise $? will be fucked
-function precmd {
+# this needs to be the first precmd function because it needs to run before any
+# other precmd hooks (e.g. the VS Code terminal integration hook) happen,
+# otherwise $? will be fucked
+precmd_functions=(build_rprompt ${precmd_functions[@]})
+function build_rprompt {
     # Start with a fresh prompt
     RPROMPT=""
     if [ -z $new_session ]; then

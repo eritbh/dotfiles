@@ -1,13 +1,13 @@
 [1]
 Description=Application settings for vivado
-decocolor=Vivado Light
+decocolor=Titlebar Vivado Default
 decocolorrule=2
 wmclass=vivado
 wmclassmatch=1
 
 [2]
 Description=Window settings for konsole
-decocolor=Konsole Dark Pastel Titlebar
+decocolor=Titlebar Konsole Dark Pastel
 decocolorrule=2
 types=1
 wmclass=konsole
@@ -15,22 +15,21 @@ wmclassmatch=1
 
 [3]
 Description=Application settings for code
-decocolor=VS Code Titlebar
+decocolor=Titlebar VS Code Erins Theme Dark
 decocolorrule=2
 wmclass=code
 wmclassmatch=1
 
 [4]
 Description=Application settings for discord
-clientmachine=localhost
-decocolor=Discord Titlebar
+decocolor=Titlebar Discord Dark
 decocolorrule=2
 wmclass=discord
 wmclassmatch=1
 
 [5]
 Description=Application settings for obsidian
-decocolor=Obsidian Light titlebar
+decocolor=Titlebar Obsidian Light
 decocolorrule=2
 wmclass=obsidian
 wmclassmatch=1

@@ -16,5 +16,9 @@ alias la='ls -aFh'
 alias l='ls -CFh'
 alias clip='xclip -selection clipboard'
 alias copy='clip'
-alias code='code -r'
 function mkcd { mkdir -p $1 && cd $1 }
+
+# Alias `code` to `code -r` if we're in the integrated terminal
+if [ "$TERM_PROGRAM" = "vscode" ]; then
+    alias code='code -r'
+fi

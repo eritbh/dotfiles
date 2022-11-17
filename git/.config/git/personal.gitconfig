@@ -1,0 +1,23 @@
+# User identity
+[user]
+	name = Erin
+	email = github@eritbh.me
+
+# Command aliases
+[alias]
+	l = log --oneline --decorate --graph
+	la = log --oneline --decorate --graph --all
+	wmerge = merge --no-commit -Xignore-space-change
+	lc = diff --numstat
+	pushup = push --set-upstream origin @
+	s = stash save --include-untracked
+	sp = stash pop
+	sl = stash list
+
+# Rebase local commits on top of remote commits when running `git pull`
+[pull]
+	rebase = true
+
+# New repos have a default branch name of "main"
+[init]
+	defaultBranch = main

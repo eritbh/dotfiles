@@ -18,6 +18,6 @@ Keep configuration that should be synced between computers in the `personal.gitc
 
     git update-index --skip-worktree git/.gitconfig
 
-## KDE
+### KDE
 
 Files in `~/.local/share/color-schemes` come from [my repo of KDE titlebar color schemes](https://github.com/eritbh/kde-application-titlebar-themes).

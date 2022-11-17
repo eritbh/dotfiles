@@ -17,3 +17,7 @@ Most of my git configuration lives in `~/.config/git/personal.gitconfig`, which 
 Keep configuration that should be synced between computers in the `personal.gitconfig` file, and after cloning the repository, consider telling Git to ignore local changes to the main `.gitconfig` file:
 
     git update-index --skip-worktree git/.gitconfig
+
+## KDE
+
+Files in `~/.local/share/color-schemes` come from [my repo of KDE titlebar color schemes](https://github.com/eritbh/kde-application-titlebar-themes).

@@ -6,6 +6,10 @@
 	la = log --oneline --decorate --graph --all
 	wmerge = merge --no-commit -Xignore-space-change
 	lc = diff --numstat
+	pushup = push --set-upstream origin @
+	s = stash save --include-untracked
+	sp = stash pop
+	sl = stash list
 [pull]
 	rebase = true
 [init]

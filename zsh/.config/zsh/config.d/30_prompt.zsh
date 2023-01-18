@@ -10,3 +10,7 @@ precmd_functions+="vcs_info"
 
 # Prompt shows hostname if connected to a remote or if root
 PROMPT="%B$([ -n "$is_remote" ] || [ "$EUID" = 0 ] && echo "%F{magenta}%m%f ")%F{$([ "$EUID" = 0 ] && echo "red" || echo "cyan")}%n%f %F{blue}%~%f%b \${vcs_info_msg_0_}%B%#%b "
+
+# The line before the prompt is used by RPROMPT for information about the previous command - leave space
+NEWLINE=$'\n'
+PROMPT="$NEWLINE$PROMPT"

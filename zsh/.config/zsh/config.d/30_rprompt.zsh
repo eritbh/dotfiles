@@ -38,6 +38,11 @@ function build_rprompt {
     exittime="$(print -P "$timeformat")"
     RPROMPT="$RPROMPT at $exittime"
 
+    # this is all info about the previous command, so put it up a line from the main prompt
+    lineup=$'\e[1A'
+    linedown=$'\e[1B'
+    RPROMPT="%{$lineup%}$RPROMPT%{$linedown%}"
+
     # that's an RPROMPT!
     export RPROMPT
 

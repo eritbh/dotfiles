@@ -33,8 +33,10 @@ function build_rprompt {
         fi
     fi
 
-    # add current time, including timezone if remote, and collapse it if we're out of room
-    RPROMPT="%<#<$RPROMPT at %D{%T$([ -n "$is_remote" ] && echo ' %Z')}"
+    # add exit time, including timezone if remote, and collapse it if we're out of room
+    timeformat="%D{%T$([ -n "$is_remote" ] && echo ' %Z')}"
+    exittime="$(print -P "$timeformat")"
+    RPROMPT="$RPROMPT at $exittime"
 
     # that's an RPROMPT!
     export RPROMPT

@@ -29,8 +29,7 @@ if [ ! -e "$nohighlightfile" ]; then
 		load_highlight
 	else
 		# if it isn't found, offer to clone it automatically
-		echo "zsh-syntax-highlighting not found."
-		if confirm "Clone from git into $targetdir?"; then
+		if confirm "zsh-syntax-highlighting not found, clone into ~/src?"; then
 			mkdir -p "$targetdir"
 			git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "$targetdir"
 			load_highlight

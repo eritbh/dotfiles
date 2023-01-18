@@ -23,3 +23,13 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 # User program: add 1password SSH utils
 export PATH="$HOME/.1password-ssh-utils/bin:$PATH"
 alias ssh="op-ssh-fetch -n && ssh"
+
+# User program: make `wg-quick up wg0` less of a pain
+function systemctl_toggle {
+	if systemctl is-active --quiet $1; then
+		sudo systemctl stop $1
+	else
+		sudo systemctl start $1
+	fi
+}
+alias wg0="systemctl_toggle wg-quick@wg0.service"

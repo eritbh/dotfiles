@@ -1,3 +1,6 @@
+# Enable comments at the command line (idk where else to put this)
+setopt interactivecomments
+
 # Aliases for color support
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"

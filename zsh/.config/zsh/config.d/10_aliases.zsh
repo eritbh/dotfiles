@@ -25,3 +25,18 @@ function mkcd { mkdir -p $1 && cd $1 }
 if [ "$TERM_PROGRAM" = "vscode" ]; then
     alias code='code -r'
 fi
+
+# A function which toggles the status of a systemd service
+function systemctl_toggle {
+	if systemctl is-active --quiet $1; then
+		sudo systemctl stop $1
+	else
+		sudo systemctl start $1
+	fi
+}
+
+# Alias `wg0` to toggle the wg0 interface if registered via systemd
+if command -v "wg-quick" 2>&1 >/dev/null; then
+    # User program: make `wg-quick up wg0` less of a pain
+    alias wg0="systemctl_toggle wg-quick@wg0.service"
+fi

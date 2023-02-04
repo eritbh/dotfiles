@@ -21,3 +21,7 @@
 # New repos have a default branch name of "main"
 [init]
 	defaultBranch = main
+
+# Set the default ignoreRevsFile (the one Github recognizes for web blames)
+[blame]
+	ignoreRevsFile = .git-blame-ignore-revs

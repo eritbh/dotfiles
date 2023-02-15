@@ -6,10 +6,9 @@ wmclass=vivado
 wmclassmatch=1
 
 [2]
-Description=Window settings for konsole
+Description=Application settings for konsole
 decocolor=Titlebar Konsole Dark Pastel
 decocolorrule=2
-types=1
 wmclass=konsole
 wmclassmatch=1
 

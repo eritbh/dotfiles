@@ -9,3 +9,6 @@ Name=My Profile
 Parent=FALLBACK/
 TerminalColumns=80
 TerminalMargin=10
+
+[Terminal Features]
+BlinkingCursorEnabled=false

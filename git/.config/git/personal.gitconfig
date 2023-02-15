@@ -13,6 +13,7 @@
 	s = stash save --include-untracked
 	sp = stash pop
 	sl = stash list
+	whoami = config --get-regexp user
 
 # Rebase local commits on top of remote commits when running `git pull`
 [pull]

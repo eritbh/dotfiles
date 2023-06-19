@@ -1,5 +1,7 @@
 [1]
 Description=Application settings for 1password
+decocolor=1Password Light
+decocolorrule=2
 wmclass=1password
 wmclassmatch=1
 

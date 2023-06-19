@@ -1,0 +1,56 @@
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAwAAAAAAAAC4AAACDfwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAAAoBAAAD+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAAmAAACDQAAAF0BAAADAAAAAQAAAAAAAAAA/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAD/////AAAACgEAAAMAAAADAAAERwAAAL78AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAAAAAERwAAAJEBAAADAAADjgAAAg0AAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+eDP-1 Height 1003=563
+eDP-1 Width 1504=1095
+eDP-1 XPosition=235
+eDP-1 YPosition=177
+
+[CompactMode]
+FontWeight=50
+
+[Desktop Entry]
+DefaultProfile=My Profile.profile
+
+[DetailsMode]
+FontWeight=50
+PreviewSize=22
+
+[General]
+AutoExpandFolders=true
+BrowseThroughArchives=true
+EditableUrl=true
+ShowToolTips=true
+Version=200
+ViewPropsTimestamp=2022,8,7,20,1,54
+
+[IconsMode]
+FontWeight=50
+
+[KFileDialog Settings]
+Recent Files[$e]=org.kde.kfontview.desktop,file:///usr/share/applications/org.kde.kfontview.desktop
+Recent URLs[$e]=file:///usr/share/applications/,file:$HOME/
+detailViewIconSize=16
+
+[KPropertiesDialog]
+eDP-1 Height 1003=544
+eDP-1 Width 1504=435
+
+[MainWindow]
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAwAAAAAAAAC4AAACDfwCAAAAAvsAAAAWAGYAbwBsAGQAZQByAHMARABvAGMAawAAAAAA/////wAAAAoBAAAD+wAAABQAcABsAGEAYwBlAHMARABvAGMAawEAAAAmAAACDQAAAF0BAAADAAAAAQAAAAAAAAAA/AIAAAAB+wAAABAAaQBuAGYAbwBEAG8AYwBrAAAAAAD/////AAAACgEAAAMAAAADAAAERwAAAL78AQAAAAH7AAAAGAB0AGUAcgBtAGkAbgBhAGwARABvAGMAawAAAAAAAAAERwAAAJEBAAADAAADjgAAAg0AAAAEAAAABAAAAAgAAAAI/AAAAAEAAAACAAAAAQAAABYAbQBhAGkAbgBUAG8AbwBsAEIAYQByAQAAAAD/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
+eDP-1 Height 1003=563
+eDP-1 Width 1504=1095
+eDP-1 XPosition=235
+eDP-1 YPosition=177
+
+[Open-with settings]
+CompletionMode=1
+History=ima,oku,fire,firef,code
+
+[PreviewSettings]
+Plugins=audiothumbnail,comicbookthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail,textthumbnail
+
+[SettingsDialog]
+eDP-1 Height 1003=440
+eDP-1 Width 1504=589

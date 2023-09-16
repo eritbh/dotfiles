@@ -1,0 +1,4 @@
+# settings for repositories in ~/src/git.ewin.moe
+[user]
+	name = Erin
+	email = git@ewin.moe

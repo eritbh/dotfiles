@@ -10,3 +10,6 @@ fancy-ctrl-z () {
 }
 zle -N fancy-ctrl-z
 bindkey '^Z' fancy-ctrl-z
+
+# make delete key work; this gets fucked with by badly-behaved distros sometimes
+bindkey "\e[3~" delete-char

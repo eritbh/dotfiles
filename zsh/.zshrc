@@ -21,5 +21,10 @@ export PATH="$PATH:$HOME/.local/bin/dart-sass"
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # User program: add 1password SSH utils
-export PATH="$HOME/.1password-ssh-utils/bin:$PATH"
-alias ssh="op-ssh-fetch -n && ssh"
+if [ -d "$HOME/.1password-ssh-utils/bin" ]; then
+  export PATH="$HOME/.1password-ssh-utils/bin:$PATH"
+  alias ssh="op-ssh-fetch -n && ssh"
+fi
+
+# User program: add rbenv
+[ -d "$HOME/.rbenv/bin" ] && eval "$(~/.rbenv/bin/rbenv init - zsh)"

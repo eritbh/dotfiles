@@ -1,0 +1,27 @@
+[Desktop Entry]
+DefaultProfile=My Profile.profile
+
+[General]
+ConfigVersion=1
+
+[KonsoleWindow]
+RememberWindowSize=false
+ShowWindowTitleOnTitleBar=true
+
+[MainWindow]
+1504x1003 screen: Height=524
+1504x1003 screen: Width=689
+1920x1080 screen: Height=524
+1920x1080 screen: Width=689
+2560x1080 screen: Height=524
+2560x1080 screen: Width=689
+DP-2=DP-2
+Height=524
+MenuBar=Disabled
+State=AAAA/wAAAAD9AAAAAQAAAAAAAAAAAAAAAPwCAAAAAvsAAAAiAFEAdQBpAGMAawBDAG8AbQBtAGEAbgBkAHMARABvAGMAawAAAAAA/////wAAAXwBAAAD+wAAABwAUwBTAEgATQBhAG4AYQBnAGUAcgBEAG8AYwBrAAAAAAD/////AAABFQEAAAMAAAKxAAACOgAAAAQAAAAEAAAACAAAAAj8AAAAAQAAAAIAAAACAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIAAAAAAP////8AAAAAAAAAAAAAABwAcwBlAHMAcwBpAG8AbgBUAG8AbwBsAGIAYQByAAAAAAD/////AAAAAAAAAAA=
+ToolBarsMovable=Disabled
+Width=689
+eDP-1=eDP-1
+
+[Notification Messages]
+CloseAllTabs=true

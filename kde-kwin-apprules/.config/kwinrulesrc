@@ -40,6 +40,13 @@ decocolorrule=2
 wmclass=obsidian
 wmclassmatch=1
 
+[7]
+Description=Application settings for gimp
+decocolor=GIMP Dark
+decocolorrule=2
+wmclass=gimp
+wmclassmatch=2
+
 [General]
-count=6
-rules=ac4334d1-953b-4987-893d-875a2a0603ac,1
+count=7
+rules=1,2,3,4,5,6,7

@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Exec=/usr/bin/syncthing serve --no-browser --logfile=default
+Icon=syncthing
+Name=syncthing
+Path=
+Terminal=False
+Type=Application

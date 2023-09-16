@@ -1,2 +1,8 @@
 [include]
 	path = ~/.config/git/personal.gitconfig
+
+# Pull in additional config files for per-server identity
+[includeIf "gitdir:~/src/github.com/"]
+	path = ~/.config/git/servers/github.com.gitconfig
+[includeIf "gitdir:~/src/git.ewin.moe/"]
+	path = ~/.config/git/servers/git.ewin.moe.gitconfig

@@ -10,5 +10,13 @@ Parent=FALLBACK/
 TerminalColumns=80
 TerminalMargin=10
 
+[Interaction Options]
+AutoCopySelectedText=true
+TrimTrailingSpacesInSelectedText=true
+
+[Scrolling]
+HistoryMode=2
+
 [Terminal Features]
 BlinkingCursorEnabled=false
+UrlHintsModifiers=0

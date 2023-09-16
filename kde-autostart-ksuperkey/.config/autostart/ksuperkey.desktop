@@ -1,0 +1,8 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Exec=/usr/bin/ksuperkey -e 'Super_L=Alt_L|F2'
+Icon=krunner
+Name=ksuperkey
+Path=
+Terminal=False
+Type=Application

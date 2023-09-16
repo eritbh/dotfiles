@@ -1,8 +1,3 @@
-# User identity
-[user]
-	name = Erin
-	email = github@eritbh.me
-
 # Command aliases
 [alias]
 	l = log --oneline --decorate --graph
@@ -27,3 +22,9 @@
 # Set the default ignoreRevsFile (the one Github recognizes for web blames)
 [blame]
 	ignoreRevsFile = .git-blame-ignore-revs
+
+# For Github I'll usually set up the credential manager via `gh` or something,
+# which ends up being platform-specific, but for this server I always just use
+# `store` on everything so might as well set it up in here
+[credential "https://git.ewin.moe"]
+	helper = store

@@ -1,0 +1,19 @@
+[Desktop Entry]
+Comment[en_US]=
+Comment=
+Encoding=UTF-8
+Exec=/usr/bin/krunner
+GenericName[en_US]=
+GenericName=
+Icon=search
+MimeType=
+Name[en_US]=KRunner
+Name=KRunner
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+Version=1.0
+X-KDE-SubstituteUID=false
+X-KDE-Username=

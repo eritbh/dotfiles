@@ -21,7 +21,7 @@ precmd_functions+="vcs_info"
 PROMPT_NORMAL="$newline%B$([ -n "$is_remote" ] || [ "$EUID" = 0 ] && echo "%F{magenta}%m%f ")%F{$([ "$EUID" = 0 ] && echo "red" || echo "\${PROMPT_NAME_COLOR:-cyan}")}%n%f %F{blue}%~%f%b \${vcs_info_msg_0_}$newline%B%#%b "
 
 # Also create a minimal prompt which is displayed for previously run commands
-PROMPT_MINIMAL="%F{$([ "$EUID" = 0 ] && echo "red" || [ -n "$is_remote" ] && echo "magenta" || echo "\${PROMPT_NAME_COLOR:-cyan}")}%B%#%b%f "
+PROMPT_MINIMAL="%F{$([ -n "$is_remote" ] && echo "magenta" || [ "$EUID" = 0 ] && echo "red" || echo "\${PROMPT_NAME_COLOR:-cyan}")}%B%#%b%f "
 
 # Replace prompt with a smaller form on enter
 PROMPT="$PROMPT_NORMAL"
